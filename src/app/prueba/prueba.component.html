@@ -1,0 +1,8 @@
+<h2>Lista de Pokémon</h2>
+<select class="form-control" [(ngModel)]="selectedPokemon">
+  <option *ngFor="let pokemon of pokemons" [value]="pokemon">
+    {{ pokemon }}
+  </option>
+</select>
+
+<p>Pokémon seleccionado: {{ selectedPokemon }}</p>
